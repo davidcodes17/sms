@@ -1,5 +1,6 @@
 import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -23,11 +24,13 @@ const Hero = () => {
               bg={"linear-gradient(45deg,tomato,darkorange)"}
               color={"white"}
               borderRadius={40}
+              _hover={'none'}
               fontWeight={300}
-            >
-              Get Started
+              >
+              <Link to={'/signup'}>Get Started</Link>
             </Button>
             <Button fontWeight={300} 
+              _hover={'none'}
             borderRadius={40}
             bg={"white"}>
               Learn More

@@ -8,13 +8,16 @@ import {
   Input,
   Text,
 } from "@chakra-ui/react";
-import { Facebook, Google } from "iconsax-react";
+import { ArrowLeft, Facebook, Google } from "iconsax-react";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Signin = () => {
   return (
-    <Flex justifyContent={"center"} mt={"50px"}>
+    <Flex justifyContent={"center"} mt={"100px"}>
+       <Box className="back" bg={"white"} p={2}>
+        <Link to={'/'}><ArrowLeft /></Link>
+      </Box>
       <Box
         bg={"white"}
         p={10}
@@ -27,11 +30,11 @@ const Signin = () => {
             User 👋
           </Text>
           <Input
-            type="email"
+            type="text"
             width={300}
             my={4}
-            name="email"
-            placeholder="you@gmail.com"
+            name="matric no"
+            placeholder="R2022/620/001"
           />
           <Input
             type="password"
@@ -51,10 +54,10 @@ const Signin = () => {
           >
             Sign In
           </Button>
-          <Text bg={"white"} textAlign={"center"} py={2}>
+          {/* <Text bg={"white"} textAlign={"center"} py={2}>
             Sign In with{" "}
-          </Text>
-          <Flex
+          </Text> */}
+          {/* <Flex
             className="google"
             bg={"white"}
             justifyContent={"center"}
@@ -87,7 +90,7 @@ const Signin = () => {
               <Image bg={"none"} width={"30%"} src="apple.svg" />
               <Text bg={"none"}>Apple </Text>
             </Flex>
-          </Flex>
+          </Flex> */}
           <Text bg={"none"} textAlign={'center'} pt={2}>
             <Link to={'/signup'}>Don't have an account? SignUp</Link>
           </Text>
