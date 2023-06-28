@@ -2,28 +2,22 @@
   font-family: Poppins;
   transition: all 1s;
 }
-body{
-    background: #f2f2f2 !important;
-    max-width: 1440px;
+body {
+  background: #f2f2f2 !important;
+  max-width: 1440px;
 }
 .logo {
-  background: -webkit-linear-gradient(
-    45deg,
-    tomato,
-    darkorchid,
-    darkorange,
-    darkgreen
-  );
+  background: -webkit-linear-gradient(45deg, tomato, darkorange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.box *{
-    display: block;
+.box * {
+  display: block;
 }
-.box{
-    background: #fff;
+.box {
+  background: #fff;
 }
-.back{
+.back {
   border-radius: 40px;
   position: fixed;
   top: 40px;
